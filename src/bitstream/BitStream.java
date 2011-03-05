@@ -343,7 +343,7 @@ public class BitStream implements Flushable, Closeable {
   {
     ArrayList<Boolean> boolvals = new ArrayList<Boolean>();
     for (int i = 0; i < intvals.size(); i++)
-      boolvals.add((intvals.get(i) == 1) ? true : false);
+      boolvals.add((intvals.get(i) == 0) ? false : true);
 
     return boolvals;
   }
